@@ -1,0 +1,19 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Thermofluid Simulation with Julia
+Source: https://github.com/inys/thermofluids-julia-course
+
+Files: *.jl examples/*.jl scripts/*.jl src/*.jl test/*.jl Project.toml Manifest.toml
+Copyright: 2026 Technical University of Leoben
+License: GPL-3.0-or-later
+
+Files: *.qmd *.md projects/*.qmd methods/*.qmd assets/figures/*
+Copyright: 2026 Technical University of Leoben
+License: CC-BY-NC-4.0
+
+Files: LICENSES/GPL-3.0-or-later.txt
+Copyright: 2007 Free Software Foundation, Inc.
+License: GPL-3.0-only
+
+Files: LICENSES/CC-BY-NC-4.0.txt
+Copyright: Creative Commons
+License: CC-BY-NC-4.0
