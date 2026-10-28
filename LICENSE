@@ -1,0 +1,154 @@
+Mixed License Notice
+
+Copyright (c) 2026, Technical University of Leoben
+
+This repository contains both software/code and educational/textual material.
+
+Unless otherwise stated:
+
+1. All source code, scripts, Julia code examples, computational notebooks,
+   configuration files, software examples, and other software components are
+   licensed under the GNU General Public License version 3.0 or later,
+   GPL-3.0-or-later.
+
+2. All lecture notes, explanatory text, course website content, slides,
+   teaching material, diagrams, figures, tables, and other non-code content
+   are licensed under the Creative Commons Attribution-NonCommercial 4.0
+   International License, CC BY-NC 4.0.
+
+The full license texts are provided in the LICENSES/ directory:
+
+    LICENSES/GPL-3.0-or-later.txt
+    LICENSES/CC-BY-NC-4.0.txt
+
+If a file contains both code and educational text, the code portions are
+licensed under GPL-3.0-or-later and the textual/explanatory portions are
+licensed under CC BY-NC 4.0, unless otherwise stated in that file.
+
+===============================================================================
+License Scope
+===============================================================================
+
+The following files and directories are generally considered code and are
+licensed under GPL-3.0-or-later:
+
+    *.jl
+    *.ipynb
+    scripts/
+    src/
+    examples/
+    notebooks/
+    test/
+    Project.toml
+    Manifest.toml
+    configuration files used to run examples
+    executable code blocks in Quarto or Markdown documents
+
+The following files and directories are generally considered educational
+content and are licensed under CC BY-NC 4.0:
+
+    lecture notes
+    explanatory text
+    course website text
+    slides
+    teaching material
+    diagrams
+    figures
+    tables
+    problem descriptions
+    assignment descriptions
+    explanatory Markdown or Quarto text
+    assets/figures/
+    images created for the course, unless otherwise stated
+
+===============================================================================
+Code License: GPL-3.0-or-later
+===============================================================================
+
+The code in this repository is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or, at your
+option, any later version.
+
+The code is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+The full text of the GPL-3.0-or-later license is provided in:
+
+    LICENSES/GPL-3.0-or-later.txt
+
+SPDX identifier for code files:
+
+    SPDX-License-Identifier: GPL-3.0-or-later
+
+===============================================================================
+Educational Content License: CC BY-NC 4.0
+===============================================================================
+
+The non-code educational and textual content in this repository is licensed
+under the Creative Commons Attribution-NonCommercial 4.0 International License.
+
+You are free to:
+
+    Share - copy and redistribute the material in any medium or format.
+
+    Adapt - remix, transform, and build upon the material.
+
+Under the following terms:
+
+    Attribution - You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any reasonable
+    manner, but not in any way that suggests the licensor endorses you or your
+    use.
+
+    NonCommercial - You may not use the material for commercial purposes.
+
+    No additional restrictions - You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the license
+    permits.
+
+The full text of the CC BY-NC 4.0 license is provided in:
+
+    LICENSES/CC-BY-NC-4.0.txt
+
+SPDX identifier for educational content files:
+
+    SPDX-License-Identifier: CC-BY-NC-4.0
+
+===============================================================================
+Attribution Request
+===============================================================================
+
+If you use, modify, or redistribute the educational material from this
+repository, please provide attribution in a form similar to:
+
+    Technical University of Leoben,
+    "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    licensed under CC BY-NC 4.0.
+
+If you use, modify, or redistribute the source code from this repository,
+please comply with the terms of GPL-3.0-or-later and preserve the required
+copyright and license notices.
+
+===============================================================================
+Third-Party Material
+===============================================================================
+
+This repository may contain references to third-party packages, software,
+figures, datasets, or external resources. Such third-party material is subject
+to its own license terms. The licenses stated here apply only to material for
+which the Technical University of Leoben is the copyright holder or has the
+right to license the material.
+
+===============================================================================
+Important Note
+===============================================================================
+
+The CC BY-NC 4.0 license includes a NonCommercial restriction and is therefore
+not considered an open-source license by the Open Source Initiative. It is,
+however, commonly used for educational material where commercial reuse should
+be restricted.
+
+The GPL-3.0-or-later applies to code only. The CC BY-NC 4.0 applies to
+non-code educational content only, unless otherwise explicitly stated.
