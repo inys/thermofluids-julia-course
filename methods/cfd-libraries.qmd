@@ -1,0 +1,43 @@
+---
+title: "CFD Libraries in Julia"
+---
+
+## Overview
+
+Julia contains several packages that are helpful for thermofluid simulation.
+
+| Package | Main Role | Course Use |
+|---|---|---|
+| `DifferentialEquations.jl` | ODEs and time integration | Coffee, pipe, semi-discrete PDEs |
+| `Gridap.jl` | Finite element method | Heat conduction and advection-diffusion |
+| `WaterLily.jl` | Incompressible immersed-boundary CFD | Flow visualization around bodies |
+| `Oceananigans.jl` | Incompressible/buoyant flow | Natural convection extension |
+| `Trixi.jl` | High-order conservation laws | Compressible CFD extension |
+| `VoronoiFVM.jl` | Finite volume on unstructured grids | Transport and heat transfer |
+| `MethodOfLines.jl` | PDE-to-ODE discretization | Heat and advection-diffusion equations |
+
+## Recommended Use in This Course
+
+For the five projects, the most useful core packages are:
+
+```julia
+DifferentialEquations.jl
+Gridap.jl
+Lux.jl
+NeuralPDE.jl
+```
+
+`WaterLily.jl` is recommended as a visual CFD demonstration for flow around
+objects and the interpretation of convective heat-transfer coefficients.
+
+## Pedagogical Rule
+
+Do not treat libraries as black boxes.
+
+For every package-based simulation, students should identify:
+
+1. governing equations,
+2. assumptions,
+3. boundary conditions,
+4. numerical method,
+5. verification strategy.

@@ -1,0 +1,56 @@
+---
+title: "Project 3: Heating of Water in an L-Shaped Pipe"
+subtitle: "Internal forced convection and plug-flow energy balance"
+---
+
+## Problem Statement
+
+Water flows through an L-shaped pipe. The outer wall temperature is maintained
+at \(100^\circ\text{C}\). The water enters colder and is heated along the pipe.
+
+## Plug-Flow Model
+
+\[
+\dot{m}c_p\frac{dT_b}{ds}
+=
+G'(T_w-T_b)
+\]
+
+Analytical solution:
+
+\[
+T_b(s)=T_w-(T_w-T_{in})
+\exp\left(-\frac{G's}{\dot{m}c_p}\right)
+\]
+
+## Julia Example
+
+```julia
+using Plots
+
+Twall = 100.0
+Tin = 20.0
+mdot = 0.02
+cp = 4180.0
+Gprime = 16.0
+Ltot = 1.08
+
+s = range(0, Ltot, length=200)
+
+T = Twall .- (Twall - Tin).*exp.(-Gprime .* s ./ (mdot*cp))
+
+plot(s, T,
+     xlabel="Distance along pipe [m]",
+     ylabel="Bulk temperature [°C]",
+     label="Water temperature",
+     linewidth=2)
+```
+
+## Student Tasks
+
+1. Compute \(Re\), \(Nu\), and \(h_i\).
+2. Compute \(G'\).
+3. Predict outlet temperature.
+4. Compare numerical and analytical solutions.
+5. Build an ML surrogate for \(T_{out}\).
+6. Optional: implement a PINN for \(T(s)\).

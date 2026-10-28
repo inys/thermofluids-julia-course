@@ -1,0 +1,106 @@
+---
+title: "Course Overview"
+---
+
+## Course Description
+
+This lecture introduces master-level engineering students to the simulation of
+thermofluids and fluid dynamics using Julia.
+
+The lecture combines:
+
+- physical modeling,
+- numerical discretization,
+- finite differences,
+- finite elements,
+- CFD packages,
+- machine learning,
+- physics-informed neural networks,
+- verification and validation.
+
+## Structure
+
+| Component | Duration | Content |
+|---:|---:|---|
+| Introduction | 5 h | Julia, governing equations, discretization, boundary conditions |
+| Project 1 | 5 h | Cooling of a hot steel cube |
+| Project 2 | 5 h | Cooling of coffee in a mug |
+| Project 3 | 5 h | Heating water in an L-shaped pipe |
+| Project 4 | 5 h | Natural convection in a square cavity |
+| Project 5 | 5 h | Heated flat plate |
+
+## Main Themes
+
+1. Transient heat conduction
+2. Convective boundary conditions
+3. Internal and external forced convection
+4. Natural convection
+5. Finite difference and finite element methods
+6. CFD workflows in Julia
+7. Surrogate modeling and parameter identification
+8. Physics-informed neural networks
+
+## Governing Equations
+
+### Heat Conduction
+
+$$
+\rho c_p \frac{\partial T}{\partial t}
+=
+\nabla\cdot(k\nabla T)+\dot{q}
+$$
+
+For constant $k$:
+
+$$
+\frac{\partial T}{\partial t}
+=
+\alpha\nabla^2T
++
+\frac{\dot{q}}{\rho c_p}
+$$
+
+### Incompressible Flow
+
+$$
+\nabla\cdot \mathbf{u}=0
+$$
+
+$$
+\rho
+\left(
+\frac{\partial \mathbf{u}}{\partial t}
++
+\mathbf{u}\cdot\nabla\mathbf{u}
+\right)
+=
+-\nabla p
++
+\mu\nabla^2\mathbf{u}
++
+\rho\mathbf{g}
+$$
+
+### Energy Equation for Flow
+
+$$
+\rho c_p
+\left(
+\frac{\partial T}{\partial t}
++
+\mathbf{u}\cdot\nabla T
+\right)
+=
+\nabla\cdot(k\nabla T)+\dot{q}
+$$
+
+## Dimensionless Numbers
+
+| Number | Definition | Meaning |
+|---|---:|---|
+| Reynolds | $Re=UL/\nu$ | inertia vs. viscosity |
+| Prandtl | $Pr=\nu/\alpha$ | momentum vs. thermal diffusion |
+| Nusselt | $Nu=hL/k$ | convective heat transfer |
+| Biot | $Bi=hL_c/k_s$ | internal vs. external thermal resistance |
+| Fourier | $Fo=\alpha t/L_c^2$ | dimensionless time |
+| Rayleigh | $Ra=g\beta\Delta T L^3/(\nu\alpha)$ | natural convection strength |

@@ -1,0 +1,86 @@
+---
+title: "Project 2: Cooling of Coffee in a Mug"
+subtitle: "Lumped thermal modeling, radiation, evaporation, and parameter fitting"
+---
+
+## Problem Statement
+
+A mug filled with hot coffee cools in a room. The goal is to predict the
+coffee temperature as a function of time and estimate the influence of mug
+properties, convection, radiation, and evaporation.
+
+## Suggested Parameters
+
+| Quantity | Symbol | Value |
+|---|---:|---:|
+| Coffee mass | \(m_c\) | \(0.25\ \text{kg}\) |
+| Coffee heat capacity | \(c_{p,c}\) | \(4180\ \text{J/(kg K)}\) |
+| Initial coffee temperature | \(T_0\) | \(90^\circ\text{C}\) |
+| Room temperature | \(T_\infty\) | \(22^\circ\text{C}\) |
+| Mug inner radius | \(r_i\) | \(0.04\ \text{m}\) |
+| Coffee height | \(H\) | \(0.08\ \text{m}\) |
+
+## Basic Model
+
+\[
+m c_p\frac{dT}{dt}
+=
+-hA(T-T_\infty)
+\]
+
+with solution:
+
+\[
+T(t)=T_\infty+(T_0-T_\infty)
+\exp\left(-\frac{hA}{mc_p}t\right)
+\]
+
+## Julia Example
+
+```julia
+using DifferentialEquations
+using Plots
+
+function cooling!(du,u,p,t)
+    T = u[1]
+    Tinf, hA, mcp = p
+    du[1] = -hA/mcp*(T-Tinf)
+end
+
+u0 = [90.0]
+p = (22.0, 0.25, 0.25*4180.0)
+prob = ODEProblem(cooling!, u0, (0.0, 3600.0), p)
+sol = solve(prob)
+
+plot(sol.t ./ 60, sol[1,:],
+     xlabel="Time [min]",
+     ylabel="Temperature [°C]",
+     label="Coffee")
+```
+
+## ML/PINN Extension
+
+Estimate unknown cooling parameters from measured data:
+
+\[
+\min_\theta \sum_i
+\left[
+T_\theta(t_i)-T_i^{meas}
+\right]^2
+\]
+
+Possible unknowns:
+
+- \(h\)
+- \(UA\)
+- evaporation coefficient
+- emissivity
+- mug heat capacity
+
+## Student Tasks
+
+1. Implement one-node and two-node models.
+2. Add radiation.
+3. Add evaporation.
+4. Fit parameters from data.
+5. Compare simulation with experiment.

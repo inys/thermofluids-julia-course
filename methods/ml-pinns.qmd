@@ -1,0 +1,74 @@
+---
+title: "Machine Learning and PINNs"
+---
+
+## ML Roles in Thermofluids
+
+Machine learning can be used for:
+
+1. surrogate modeling,
+2. parameter identification,
+3. reduced-order modeling,
+4. closure modeling,
+5. inverse heat-transfer problems.
+
+## PINN Concept
+
+A physics-informed neural network approximates the solution:
+
+\[
+T(x,t)\approx T_\theta(x,t)
+\]
+
+The loss includes the PDE residual:
+
+\[
+\mathcal{L}_{PDE}
+=
+\frac{1}{N}
+\sum_i
+\left[
+\frac{\partial T_\theta}{\partial t}
+-
+\alpha\nabla^2T_\theta
+\right]^2
+\]
+
+plus initial and boundary condition losses.
+
+## Example: Coffee ODE PINN
+
+Newton cooling:
+
+\[
+\frac{dT}{dt}
++
+\beta(T-T_\infty)=0
+\]
+
+Residual:
+
+\[
+r(t)=
+\frac{dT_\theta}{dt}
++
+\beta(T_\theta-T_\infty)
+\]
+
+## Project Mapping
+
+| Project | ML Task | PINN Task |
+|---|---|---|
+| Steel cube | surrogate for final temperature | 1D heat equation PINN |
+| Coffee | fit cooling parameters | ODE-PINN |
+| L-pipe | surrogate for outlet temperature | plug-flow ODE-PINN |
+| Cavity | \(Nu(Ra)\) model | advection-diffusion PINN |
+| Flat plate | learn Nusselt correlation | boundary-layer PINN |
+
+## Practical Advice
+
+1. Non-dimensionalize variables.
+2. Start with simple ODEs.
+3. Compare with analytical or classical numerical solutions.
+4. Avoid using PINNs as a black box.
+5. Be careful with loss weighting.

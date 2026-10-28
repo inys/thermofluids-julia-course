@@ -1,0 +1,109 @@
+---
+title: "Finite Element Method"
+---
+
+## Weak Form of the Heat Equation
+
+Strong form:
+
+\[
+\rho c_p\frac{\partial T}{\partial t}
+=
+\nabla\cdot(k\nabla T)
+\]
+
+Multiply by a test function \(v\), integrate over \(\Omega\), and integrate by parts:
+
+\[
+\int_\Omega
+\rho c_p
+\frac{\partial T}{\partial t}
+v\,d\Omega
++
+\int_\Omega
+k\nabla T\cdot\nabla v\,d\Omega
+=
+\int_{\Gamma_q}q''v\,d\Gamma
+-
+\int_{\Gamma_h}h(T-T_\infty)v\,d\Gamma
+\]
+
+For a Robin boundary:
+
+\[
+-k\nabla T\cdot n=h(T-T_\infty)
+\]
+
+the weak contribution is:
+
+\[
+\int_{\Gamma_h}hTv\,d\Gamma
+=
+\int_{\Gamma_h}hT_\infty v\,d\Gamma
+\]
+
+## Backward Euler Time Discretization
+
+\[
+\int_\Omega
+\rho c_p
+\frac{T^{n+1}}{\Delta t}
+v\,d\Omega
++
+\int_\Omega
+k\nabla T^{n+1}\cdot\nabla v\,d\Omega
++
+\int_{\Gamma_h}
+hT^{n+1}v\,d\Gamma
+=
+\]
+
+\[
+\int_\Omega
+\rho c_p
+\frac{T^n}{\Delta t}
+v\,d\Omega
++
+\int_{\Gamma_h}
+hT_\infty v\,d\Gamma
++
+\int_{\Gamma_q}
+q''v\,d\Gamma
+\]
+
+## Gridap.jl Skeleton
+
+```julia
+using Gridap
+
+domain = (0.0, 1.0, 0.0, 1.0)
+partition = (40, 40)
+model = CartesianDiscreteModel(domain, partition)
+
+order = 1
+reffe = ReferenceFE(lagrangian, Float64, order)
+
+V = TestFESpace(model, reffe; conformity=:H1)
+U = TrialFESpace(V)
+
+Ω = Triangulation(model)
+dΩ = Measure(Ω, 2)
+
+k = 1.0
+
+a(T,v) = ∫(k*∇(T)⋅∇(v))dΩ
+l(v) = 0
+
+op = AffineFEOperator(a, l, U, V)
+T = solve(op)
+```
+
+## When to Use FEM
+
+FEM is especially useful for:
+
+- complex geometries,
+- multi-material heat conduction,
+- weak-form boundary conditions,
+- structural thermal analysis,
+- coupled thermomechanical problems.

@@ -1,0 +1,37 @@
+---
+title: "Schedule"
+---
+
+## 30-Hour Course Schedule
+
+| Block | Duration | Topic |
+|---:|---:|---|
+| 1 | 5 h | Introduction to Julia and thermofluid simulation |
+| 2 | 5 h | Project 1: Cooling of a hot steel cube |
+| 3 | 5 h | Project 2: Cooling of coffee in a mug |
+| 4 | 5 h | Project 3: Heating of water in an L-shaped pipe |
+| 5 | 5 h | Project 4: Natural convection in a square cavity |
+| 6 | 5 h | Project 5: Flow and heat transfer over a heated flat plate |
+
+## Introductory Block
+
+| Time | Activity |
+|---:|---|
+| 0:00–0:45 | Julia basics |
+| 0:45–1:30 | Governing equations |
+| 1:30–2:15 | Heat equation and finite differences |
+| 2:15–3:00 | Boundary conditions |
+| 3:00–3:45 | ODE models and `DifferentialEquations.jl` |
+| 3:45–4:30 | Plotting and post-processing |
+| 4:30–5:00 | Assignment of projects and group setup |
+
+## Generic Project Block
+
+| Time | Activity |
+|---:|---|
+| 0:00–0:45 | Problem formulation and assumptions |
+| 0:45–1:30 | Governing equations and nondimensional numbers |
+| 1:30–2:30 | Numerical or ML/PINN implementation |
+| 2:30–3:30 | Results, plotting, debugging |
+| 3:30–4:30 | Parameter study and verification |
+| 4:30–5:00 | Discussion and reporting |

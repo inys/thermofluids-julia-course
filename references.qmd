@@ -1,0 +1,16 @@
+---
+title: "References"
+---
+
+## Recommended Books
+
+::: {#refs}
+:::
+
+## Online Resources
+
+- [Julia Documentation](https://docs.julialang.org)
+- [DifferentialEquations.jl Documentation](https://docs.sciml.ai/DiffEqDocs)
+- [Gridap.jl Documentation](https://gridap.github.io/Gridap.jl/stable/)
+- [Quarto Documentation](https://quarto.org)
+- [Julia Academy](https://juliaacademy.com)

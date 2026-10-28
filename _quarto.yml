@@ -1,0 +1,128 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Thermofluid Simulation with Julia"
+  site-url: "https://your-domain-or-github-pages-url"
+  description: "Master-level engineering lecture on thermofluids, CFD, FEM, ML, and PINNs using Julia."
+  favicon: assets/favicon.png
+
+  navbar:
+    logo: assets/logo-3x1.png
+    logo-alt: "Thermofluid Simulation with Julia course logo"
+    background: "#F7F2EA"
+    foreground: "#253047"
+    search: true
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Overview"
+        href: overview.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Setup"
+        href: setup.qmd
+      - text: "Projects"
+        menu:
+          - text: "Project 1: Steel Cube Cooling"
+            href: projects/project-1-steel-cube.qmd
+          - text: "Project 2: Coffee Cooling"
+            href: projects/project-2-coffee.qmd
+          - text: "Project 3: L-Shaped Pipe"
+            href: projects/project-3-l-pipe.qmd
+      - text: "Methods"
+        menu:
+          - text: "Finite Difference"
+            href: methods/finite-difference.qmd
+          - text: "Finite Element Method"
+            href: methods/finite-element.qmd
+          - text: "CFD Libraries in Julia"
+            href: methods/cfd-libraries.qmd
+          - text: "ML and PINNs"
+            href: methods/ml-pinns.qmd
+          - text: "Verification & Validation"
+            href: methods/verification-validation.qmd
+      - text: "Assessment"
+        href: assessment.qmd
+      - text: "References"
+        href: references.qmd
+
+    right:
+      - icon: github
+        href: "https://github.com/inys/thermofluids-julia-course"
+        aria-label: GitHub repository
+      - icon: mortarboard
+        href: "https://your-moodle-course-url"
+        aria-label: Moodle course
+
+  sidebar:
+    - title: "Course"
+      style: "docked"
+      background: "#FBF8F2"
+      contents:
+        - index.qmd
+        - overview.qmd
+        - schedule.qmd
+        - setup.qmd
+        - assessment.qmd
+        - references.qmd
+
+    - title: "Projects"
+      contents:
+        - projects/project-1-steel-cube.qmd
+        - projects/project-2-coffee.qmd
+        - projects/project-3-l-pipe.qmd
+
+    - title: "Methods"
+      contents:
+        - methods/finite-difference.qmd
+        - methods/finite-element.qmd
+        - methods/cfd-libraries.qmd
+        - methods/ml-pinns.qmd
+        - methods/verification-validation.qmd
+
+  page-footer:
+    left: "© 2026 Thermofluid Simulation with Julia"
+    center: "Master-level engineering lecture"
+    right:
+      - text: "Moodle"
+        href: "https://your-moodle-course-url"
+      - text: "Julia"
+        href: "https://julialang.org"
+      - text: "Quarto"
+        href: "https://quarto.org"
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    code-tools: true
+    highlight-style: github
+    fig-align: center
+    link-external-newwindow: true
+    callout-appearance: simple
+    grid:
+      sidebar-width: 280px
+      body-width: 980px
+      margin-width: 260px
+    html-math-method: 
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/elsevier-harvard

@@ -1,0 +1,53 @@
+---
+title: "Assessment"
+---
+
+## Deliverables
+
+Each group submits:
+
+1. Julia code or notebook.
+2. Short technical report.
+3. Main plots.
+4. Parameter table.
+5. Explanation of assumptions.
+6. Numerical method.
+7. Verification or validation check.
+8. Sensitivity study.
+9. Engineering interpretation.
+
+## Suggested Report Structure
+
+1. Introduction
+2. Problem definition
+3. Physical assumptions
+4. Governing equations
+5. Numerical method
+6. Julia implementation
+7. Results
+8. Verification and sensitivity analysis
+9. Discussion
+10. Conclusion
+11. Appendix with code
+
+## Grading Rubric
+
+| Criterion | Weight |
+|---|---:|
+| Physical modeling | 25% |
+| Numerical implementation | 25% |
+| Verification and sensitivity analysis | 20% |
+| Plots and engineering interpretation | 15% |
+| Report clarity and reproducibility | 15% |
+
+## Oral Presentation
+
+Each group gives a 10–15 minute presentation covering:
+
+- model assumptions,
+- governing equations,
+- numerical method,
+- main results,
+- verification,
+- limitations,
+- engineering conclusions.

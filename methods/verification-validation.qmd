@@ -1,0 +1,61 @@
+---
+title: "Verification and Validation"
+---
+
+## Verification
+
+Verification asks:
+
+> Are we solving the equations correctly?
+
+Typical checks:
+
+1. grid refinement,
+2. time-step refinement,
+3. analytical solution comparison,
+4. conservation of energy,
+5. limiting cases.
+
+## Validation
+
+Validation asks:
+
+> Are we solving the correct equations?
+
+Typical checks:
+
+1. comparison with experiments,
+2. empirical correlations,
+3. benchmark cases,
+4. physical plausibility.
+
+## Examples
+
+### Coffee Cooling
+
+Compare fitted model with measured temperature data.
+
+### Pipe Heating
+
+Compare finite-volume solution with analytical plug-flow solution.
+
+### Flat Plate
+
+Compare numerical wall heat flux with Nusselt correlation.
+
+### Steel Cube
+
+Check energy removed through boundaries against internal energy decrease:
+
+\[
+\Delta E
+=
+\rho c_p V
+\left(
+\bar{T}(t)-\bar{T}(0)
+\right)
+\]
+
+## Reporting Requirement
+
+Every project report must include at least one verification or validation check.

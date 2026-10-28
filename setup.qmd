@@ -1,0 +1,122 @@
+---
+title: "Software Setup"
+---
+
+## Julia Installation
+
+Install Julia from:
+
+<https://julialang.org/downloads/>
+
+Recommended version:
+
+```bash
+julia --version
+```
+
+Use Julia 1.10 or newer if possible.
+
+## Development Environment
+
+Recommended options:
+
+1. VS Code with the Julia extension
+2. Pluto notebooks
+3. Jupyter notebooks via IJulia
+4. Julia REPL
+
+## Basic Package Installation
+
+```julia
+using Pkg
+
+Pkg.add([
+    "Plots",
+    "CairoMakie",
+    "LinearAlgebra",
+    "SparseArrays",
+    "Statistics",
+    "DifferentialEquations",
+    "OrdinaryDiffEq",
+    "DataFrames",
+    "CSV"
+])
+```
+
+## FEM Packages
+
+```julia
+using Pkg
+
+Pkg.add([
+    "Gridap",
+    "GridapGmsh",
+    "Gmsh"
+])
+```
+
+## ML and PINN Packages
+
+```julia
+using Pkg
+
+Pkg.add([
+    "Lux",
+    "Flux",
+    "Optimization",
+    "OptimizationOptimisers",
+    "OptimizationOptimJL",
+    "ComponentArrays",
+    "Zygote",
+    "SciMLSensitivity",
+    "NeuralPDE",
+    "ModelingToolkit"
+])
+```
+
+## Optional CFD Packages
+
+```julia
+using Pkg
+
+Pkg.add([
+    "WaterLily",
+    "Oceananigans",
+    "Trixi",
+    "VoronoiFVM",
+    "MethodOfLines"
+])
+```
+
+## Test Installation
+
+```julia
+using DifferentialEquations
+using Plots
+
+f(u,p,t) = -0.01u
+prob = ODEProblem(f, 1.0, (0.0, 10.0))
+sol = solve(prob)
+
+plot(sol)
+```
+
+If a plot appears, the basic installation works.
+
+## Quarto with Julia
+
+Install Quarto:
+
+<https://quarto.org/docs/get-started/>
+
+To render this website:
+
+```bash
+quarto render
+```
+
+To preview locally:
+
+```bash
+quarto preview
+```

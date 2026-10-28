@@ -1,0 +1,220 @@
+---
+title: "Simulation of Thermofluids and Fluid Dynamics using Julia"
+subtitle: "CFD, heat transfer, FEM, machine learning, and PINNs for master-level engineering students"
+title-block-banner: false
+page-layout: full
+---
+
+<div class="hero">
+
+<img src="assets/logo-3x1.png" class="hero-logo" alt="Course logo: Thermofluid Simulation with Julia">
+
+<div class="hero-title">
+Simulation of Thermofluids and Fluid Dynamics using Julia
+</div>
+
+<div class="hero-subtitle">
+A master-level engineering lecture combining classical thermofluid modeling,
+numerical simulation, finite differences, finite elements, CFD libraries,
+machine learning, and physics-informed neural networks.
+</div>
+
+</div>
+
+## Course at a Glance
+
+:::: {.course-card-grid}
+
+::: {.course-card}
+### 5 h Introduction
+
+Core Julia syntax, thermofluid governing equations, heat equation, convection,
+boundary conditions, numerical stability, and visualization.
+
+[Go to overview](overview.qmd)
+:::
+
+::: {.course-card}
+### 5 Projects × 5 h
+
+Application-oriented simulation projects involving cooling, heating,
+internal flow, natural convection, and boundary layers.
+
+[View projects](#projects)
+:::
+
+::: {.course-card}
+### Julia Ecosystem
+
+Use plain Julia, `DifferentialEquations.jl`, `Gridap.jl`, `WaterLily.jl`,
+`Lux.jl`, and `NeuralPDE.jl` where appropriate.
+
+[Software setup](setup.qmd)
+:::
+
+::: {.course-card}
+### Deliverables
+
+Students submit code, plots, model assumptions, verification checks,
+parameter studies, and engineering interpretation.
+
+[Assessment](assessment.qmd)
+:::
+
+::::
+
+## Learning Objectives
+
+After this lecture, students should be able to:
+
+1. Formulate thermofluid problems using conservation laws.
+2. Identify suitable models for conduction, convection, advection-diffusion, and incompressible flow.
+3. Implement finite-difference, finite-volume, and finite-element models in Julia.
+4. Use selected Julia packages for thermofluid simulation.
+5. Build simple ML surrogates and PINN models for thermal and flow problems.
+6. Verify numerical results using analytical solutions, correlations, grid studies, and energy balances.
+7. Interpret simulation results from an engineering perspective.
+
+## Projects {#projects}
+
+:::: {.course-card-grid}
+
+::: {.course-card}
+### Project 1  
+#### Cooling of a Hot Steel Cube
+
+<span class="tag tag-heat">Transient conduction</span>
+<span class="tag tag-fem">FEM</span>
+<span class="tag tag-ml">PINN</span>
+
+A steel cube of side length 70 mm is initially at 1000 °C and cooled by air and a water-ice mixture.
+
+[Open project](projects/project-1-steel-cube.qmd)
+:::
+
+::: {.course-card}
+### Project 2  
+#### Cooling of Coffee in a Mug
+
+<span class="tag tag-heat">Lumped model</span>
+<span class="tag tag-ml">Parameter fitting</span>
+<span class="tag">ODEs</span>
+
+A mug of hot coffee cools through convection, radiation, evaporation, and conduction through the mug wall.
+
+[Open project](projects/project-2-coffee.qmd)
+:::
+
+::: {.course-card}
+### Project 3  
+#### Heating Water in an L-Shaped Pipe
+
+<span class="tag tag-cfd">Internal flow</span>
+<span class="tag">Nusselt correlations</span>
+<span class="tag tag-ml">Surrogate</span>
+
+Water flows through an L-shaped pipe with external wall temperature of 100 °C.
+
+[Open project](projects/project-3-l-pipe.qmd)
+:::
+
+::: {.course-card}
+### Project 4  
+#### Natural Convection in a Square Cavity
+
+<span class="tag tag-cfd">Buoyancy</span>
+<span class="tag tag-fdm">Advection-diffusion</span>
+<span class="tag tag-fem">FEM</span>
+
+A square cavity has a hot left wall, cold right wall, insulated top and bottom.
+
+[Open project](projects/project-4-cavity.qmd)
+:::
+
+::: {.course-card}
+### Project 5  
+#### Heated Flat Plate
+
+<span class="tag tag-cfd">Boundary layer</span>
+<span class="tag">Nusselt number</span>
+<span class="tag tag-ml">ML correlation</span>
+
+Air flows over a heated flat plate. Students compute wall heat flux and compare to correlations.
+
+[Open project](projects/project-5-flat-plate.qmd)
+:::
+
+::::
+
+## Methods Covered
+
+:::: {.course-card-grid}
+
+::: {.course-card}
+### Finite Differences
+
+Explicit and implicit discretization of heat and advection-diffusion equations.
+
+[Finite difference notes](methods/finite-difference.qmd)
+:::
+
+::: {.course-card}
+### Finite Elements
+
+Weak forms, Robin boundary conditions, transient heat conduction, and FEM implementation.
+
+[FEM notes](methods/finite-element.qmd)
+:::
+
+::: {.course-card}
+### CFD Libraries
+
+Overview of helpful Julia libraries such as `WaterLily.jl`, `Gridap.jl`,
+`Trixi.jl`, and `Oceananigans.jl`.
+
+[CFD libraries](methods/cfd-libraries.qmd)
+:::
+
+::: {.course-card}
+### ML and PINNs
+
+Surrogate models, parameter identification, neural ODEs, and physics-informed neural networks.
+
+[ML and PINNs](methods/ml-pinns.qmd)
+:::
+
+::::
+
+## Recommended Prior Knowledge
+
+Students should be familiar with:
+
+- basic thermodynamics,
+- heat transfer,
+- fluid mechanics,
+- partial differential equations,
+- elementary numerical methods,
+- programming basics, preferably MATLAB, Python, or Julia.
+
+## Quick Start
+
+Install Julia and the course packages:
+
+```julia
+using Pkg
+
+Pkg.add([
+    "Plots",
+    "CairoMakie",
+    "DifferentialEquations",
+    "OrdinaryDiffEq",
+    "SparseArrays",
+    "LinearAlgebra",
+    "Statistics",
+    "Gridap",
+    "Lux",
+    "Optimization",
+    "OptimizationOptimisers",
+    "NeuralPDE"
+])
+```
