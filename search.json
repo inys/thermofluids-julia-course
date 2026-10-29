@@ -1,0 +1,814 @@
+[
+  {
+    "objectID": "assessment.html",
+    "href": "assessment.html",
+    "title": "Assessment",
+    "section": "",
+    "text": "Each group submits:\n\nJulia code or notebook.\nShort technical report.\nMain plots.\nParameter table.\nExplanation of assumptions.\nNumerical method.\nVerification or validation check.\nSensitivity study.\nEngineering interpretation.",
+    "crumbs": [
+      "Home",
+      "Assessment"
+    ]
+  },
+  {
+    "objectID": "assessment.html#deliverables",
+    "href": "assessment.html#deliverables",
+    "title": "Assessment",
+    "section": "",
+    "text": "Each group submits:\n\nJulia code or notebook.\nShort technical report.\nMain plots.\nParameter table.\nExplanation of assumptions.\nNumerical method.\nVerification or validation check.\nSensitivity study.\nEngineering interpretation.",
+    "crumbs": [
+      "Home",
+      "Assessment"
+    ]
+  },
+  {
+    "objectID": "assessment.html#suggested-report-structure",
+    "href": "assessment.html#suggested-report-structure",
+    "title": "Assessment",
+    "section": "2 Suggested Report Structure",
+    "text": "2 Suggested Report Structure\n\nIntroduction\nProblem definition\nPhysical assumptions\nGoverning equations\nNumerical method\nJulia implementation\nResults\nVerification and sensitivity analysis\nDiscussion\nConclusion\nAppendix with code",
+    "crumbs": [
+      "Home",
+      "Assessment"
+    ]
+  },
+  {
+    "objectID": "assessment.html#grading-rubric",
+    "href": "assessment.html#grading-rubric",
+    "title": "Assessment",
+    "section": "3 Grading Rubric",
+    "text": "3 Grading Rubric\n\n\n\nCriterion\nWeight\n\n\n\n\nPhysical modeling\n25%\n\n\nNumerical implementation\n25%\n\n\nVerification and sensitivity analysis\n20%\n\n\nPlots and engineering interpretation\n15%\n\n\nReport clarity and reproducibility\n15%",
+    "crumbs": [
+      "Home",
+      "Assessment"
+    ]
+  },
+  {
+    "objectID": "assessment.html#oral-presentation",
+    "href": "assessment.html#oral-presentation",
+    "title": "Assessment",
+    "section": "4 Oral Presentation",
+    "text": "4 Oral Presentation\nEach group gives a 10–15 minute presentation covering:\n\nmodel assumptions,\ngoverning equations,\nnumerical method,\nmain results,\nverification,\nlimitations,\nengineering conclusions.",
+    "crumbs": [
+      "Home",
+      "Assessment"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "",
+    "text": "Simulation of Thermofluids and Fluid Dynamics using Julia\n\n\nA master-level engineering lecture combining classical thermofluid modeling, numerical simulation, finite differences, finite elements, CFD libraries, machine learning, and physics-informed neural networks.",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#course-at-a-glance",
+    "href": "index.html#course-at-a-glance",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "1 Course at a Glance",
+    "text": "1 Course at a Glance\n\n\n1.1 5 h Introduction\nCore Julia syntax, thermofluid governing equations, heat equation, convection, boundary conditions, numerical stability, and visualization.\nGo to overview\n\n\n1.2 3 Projects × 5 h\nApplication-oriented simulation projects involving cooling, heating, internal flow, natural convection, and boundary layers.\nView projects\n\n\n1.3 Julia Ecosystem\nUse plain Julia, DifferentialEquations.jl, Gridap.jl, WaterLily.jl, Lux.jl, and NeuralPDE.jl where appropriate.\nSoftware setup\n\n\n1.4 Deliverables\nStudents submit code, plots, model assumptions, verification checks, parameter studies, and engineering interpretation.\nAssessment",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "2 Learning Objectives",
+    "text": "2 Learning Objectives\nAfter this lecture, students should be able to:\n\nFormulate thermofluid problems using conservation laws.\nIdentify suitable models for conduction, convection, advection-diffusion, and incompressible flow.\nImplement finite-difference, finite-volume, and finite-element models in Julia.\nUse selected Julia packages for thermofluid simulation.\nBuild simple ML surrogates and PINN models for thermal and flow problems.\nVerify numerical results using analytical solutions, correlations, grid studies, and energy balances.\nInterpret simulation results from an engineering perspective.",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "3 Projects",
+    "text": "3 Projects\n\n\n3.1 Project 1\n\n3.1.1 Cooling of a Hot Steel Cube\nTransient conduction FEM PINN\nA steel cube of side length 70 mm is initially at 1000 °C and cooled by air and a water-ice mixture.\nOpen project\n\n\n\n3.2 Project 2\n\n3.2.1 Cooling of Coffee in a Mug\nLumped model Parameter fitting ODEs\nA mug of hot coffee cools through convection, radiation, evaporation, and conduction through the mug wall.\nOpen project\n\n\n\n3.3 Project 3\n\n3.3.1 Heating Water in an L-Shaped Pipe\nInternal flow Nusselt correlations Surrogate\nWater flows through an L-shaped pipe with external wall temperature of 100 °C.\nOpen project",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#methods-covered",
+    "href": "index.html#methods-covered",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "4 Methods Covered",
+    "text": "4 Methods Covered\n\n\n4.1 Finite Differences\nExplicit and implicit discretization of heat and advection-diffusion equations.\nFinite difference notes\n\n\n4.2 Finite Elements\nWeak forms, Robin boundary conditions, transient heat conduction, and FEM implementation.\nFEM notes\n\n\n4.3 CFD Libraries\nOverview of helpful Julia libraries such as WaterLily.jl, Gridap.jl, Trixi.jl, and Oceananigans.jl.\nCFD libraries\n\n\n4.4 ML and PINNs\nSurrogate models, parameter identification, neural ODEs, and physics-informed neural networks.\nML and PINNs",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#recommended-prior-knowledge",
+    "href": "index.html#recommended-prior-knowledge",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "5 Recommended Prior Knowledge",
+    "text": "5 Recommended Prior Knowledge\nStudents should be familiar with:\n\nbasic thermodynamics,\nheat transfer,\nfluid mechanics,\npartial differential equations,\nelementary numerical methods,\nprogramming basics, preferably MATLAB, Python, or Julia.",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "index.html#quick-start",
+    "href": "index.html#quick-start",
+    "title": "Simulation of Thermofluids and Fluid Dynamics using Julia",
+    "section": "6 Quick Start",
+    "text": "6 Quick Start\nInstall Julia and the course packages:\nusing Pkg\n\nPkg.add([\n    \"Plots\",\n    \"CairoMakie\",\n    \"DifferentialEquations\",\n    \"OrdinaryDiffEq\",\n    \"SparseArrays\",\n    \"LinearAlgebra\",\n    \"Statistics\",\n    \"Gridap\",\n    \"Lux\",\n    \"Optimization\",\n    \"OptimizationOptimisers\",\n    \"NeuralPDE\"\n])",
+    "crumbs": [
+      "Home",
+      "Simulation of Thermofluids and Fluid Dynamics using Julia"
+    ]
+  },
+  {
+    "objectID": "methods/verification-validation.html",
+    "href": "methods/verification-validation.html",
+    "title": "Verification and Validation",
+    "section": "",
+    "text": "Verification asks:\n\nAre we solving the equations correctly?\n\nTypical checks:\n\ngrid refinement,\ntime-step refinement,\nanalytical solution comparison,\nconservation of energy,\nlimiting cases.",
+    "crumbs": [
+      "Verification and Validation"
+    ]
+  },
+  {
+    "objectID": "methods/verification-validation.html#verification",
+    "href": "methods/verification-validation.html#verification",
+    "title": "Verification and Validation",
+    "section": "",
+    "text": "Verification asks:\n\nAre we solving the equations correctly?\n\nTypical checks:\n\ngrid refinement,\ntime-step refinement,\nanalytical solution comparison,\nconservation of energy,\nlimiting cases.",
+    "crumbs": [
+      "Verification and Validation"
+    ]
+  },
+  {
+    "objectID": "methods/verification-validation.html#validation",
+    "href": "methods/verification-validation.html#validation",
+    "title": "Verification and Validation",
+    "section": "2 Validation",
+    "text": "2 Validation\nValidation asks:\n\nAre we solving the correct equations?\n\nTypical checks:\n\ncomparison with experiments,\nempirical correlations,\nbenchmark cases,\nphysical plausibility.",
+    "crumbs": [
+      "Verification and Validation"
+    ]
+  },
+  {
+    "objectID": "methods/verification-validation.html#examples",
+    "href": "methods/verification-validation.html#examples",
+    "title": "Verification and Validation",
+    "section": "3 Examples",
+    "text": "3 Examples\n\n3.1 Coffee Cooling\nCompare fitted model with measured temperature data.\n\n\n3.2 Pipe Heating\nCompare finite-volume solution with analytical plug-flow solution.\n\n\n3.3 Flat Plate\nCompare numerical wall heat flux with Nusselt correlation.\n\n\n3.4 Steel Cube\nCheck energy removed through boundaries against internal energy decrease:\n[ E = c_p V ( {T}(t)-{T}(0) ) ]",
+    "crumbs": [
+      "Verification and Validation"
+    ]
+  },
+  {
+    "objectID": "methods/verification-validation.html#reporting-requirement",
+    "href": "methods/verification-validation.html#reporting-requirement",
+    "title": "Verification and Validation",
+    "section": "4 Reporting Requirement",
+    "text": "4 Reporting Requirement\nEvery project report must include at least one verification or validation check.",
+    "crumbs": [
+      "Verification and Validation"
+    ]
+  },
+  {
+    "objectID": "methods/finite-element.html",
+    "href": "methods/finite-element.html",
+    "title": "Finite Element Method",
+    "section": "",
+    "text": "Strong form:\n[ c_p = (kT) ]\nMultiply by a test function (v), integrate over (), and integrate by parts:\n[  c_p v,d +  kTv,d = _{q}q’’v,d - {h}h(T-T)v,d ]\nFor a Robin boundary:\n[ -kTn=h(T-T_) ]\nthe weak contribution is:\n[ _{h}hTv,d = {h}hTv,d ]",
+    "crumbs": [
+      "Finite Element Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-element.html#weak-form-of-the-heat-equation",
+    "href": "methods/finite-element.html#weak-form-of-the-heat-equation",
+    "title": "Finite Element Method",
+    "section": "",
+    "text": "Strong form:\n[ c_p = (kT) ]\nMultiply by a test function (v), integrate over (), and integrate by parts:\n[  c_p v,d +  kTv,d = _{q}q’’v,d - {h}h(T-T)v,d ]\nFor a Robin boundary:\n[ -kTn=h(T-T_) ]\nthe weak contribution is:\n[ _{h}hTv,d = {h}hTv,d ]",
+    "crumbs": [
+      "Finite Element Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-element.html#backward-euler-time-discretization",
+    "href": "methods/finite-element.html#backward-euler-time-discretization",
+    "title": "Finite Element Method",
+    "section": "2 Backward Euler Time Discretization",
+    "text": "2 Backward Euler Time Discretization\n[  c_p v,d +  kT^{n+1}v,d + _{_h} hT^{n+1}v,d = ]\n[  c_p v,d + {h} hTv,d + _{_q} q’’v,d ]",
+    "crumbs": [
+      "Finite Element Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-element.html#gridap.jl-skeleton",
+    "href": "methods/finite-element.html#gridap.jl-skeleton",
+    "title": "Finite Element Method",
+    "section": "3 Gridap.jl Skeleton",
+    "text": "3 Gridap.jl Skeleton\nusing Gridap\n\ndomain = (0.0, 1.0, 0.0, 1.0)\npartition = (40, 40)\nmodel = CartesianDiscreteModel(domain, partition)\n\norder = 1\nreffe = ReferenceFE(lagrangian, Float64, order)\n\nV = TestFESpace(model, reffe; conformity=:H1)\nU = TrialFESpace(V)\n\nΩ = Triangulation(model)\ndΩ = Measure(Ω, 2)\n\nk = 1.0\n\na(T,v) = ∫(k*∇(T)⋅∇(v))dΩ\nl(v) = 0\n\nop = AffineFEOperator(a, l, U, V)\nT = solve(op)",
+    "crumbs": [
+      "Finite Element Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-element.html#when-to-use-fem",
+    "href": "methods/finite-element.html#when-to-use-fem",
+    "title": "Finite Element Method",
+    "section": "4 When to Use FEM",
+    "text": "4 When to Use FEM\nFEM is especially useful for:\n\ncomplex geometries,\nmulti-material heat conduction,\nweak-form boundary conditions,\nstructural thermal analysis,\ncoupled thermomechanical problems.",
+    "crumbs": [
+      "Finite Element Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-difference.html",
+    "href": "methods/finite-difference.html",
+    "title": "Finite Difference Method",
+    "section": "",
+    "text": "[ = ]\nCentral difference in space:\n[ ]\nExplicit Euler in time:\n[ T_i^{n+1} = T_i^n+ ( T_{i+1}n-2T_in+T_{i-1}^n ) ]",
+    "crumbs": [
+      "Finite Difference Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-difference.html#d-heat-equation",
+    "href": "methods/finite-difference.html#d-heat-equation",
+    "title": "Finite Difference Method",
+    "section": "",
+    "text": "[ = ]\nCentral difference in space:\n[ ]\nExplicit Euler in time:\n[ T_i^{n+1} = T_i^n+ ( T_{i+1}n-2T_in+T_{i-1}^n ) ]",
+    "crumbs": [
+      "Finite Difference Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-difference.html#stability",
+    "href": "methods/finite-difference.html#stability",
+    "title": "Finite Difference Method",
+    "section": "2 Stability",
+    "text": "2 Stability\n[ Fo= ]\nFor explicit 1D conduction:\n[ Fo ]\nFor 2D equal grid spacing:\n[ Fo ]",
+    "crumbs": [
+      "Finite Difference Method"
+    ]
+  },
+  {
+    "objectID": "methods/finite-difference.html#julia-example",
+    "href": "methods/finite-difference.html#julia-example",
+    "title": "Finite Difference Method",
+    "section": "3 Julia Example",
+    "text": "3 Julia Example\nusing Plots\n\nfunction heat1d(; L=1.0, Nx=51, α=1e-4, dt=0.1, t_end=100.0)\n    dx = L/(Nx-1)\n    x = range(0, L, length=Nx)\n    Fo = α*dt/dx^2\n\n    T = fill(20.0, Nx)\n    T[div(Nx,2)] = 100.0\n\n    Nt = Int(round(t_end/dt))\n\n    for n in 1:Nt\n        Tnew = copy(T)\n        for i in 2:Nx-1\n            Tnew[i] = T[i] + Fo*(T[i+1]-2T[i]+T[i-1])\n        end\n        Tnew[1] = Tnew[2]\n        Tnew[end] = Tnew[end-1]\n        T = Tnew\n    end\n\n    return x, T\nend\n\nx, T = heat1d()\nplot(x, T, xlabel=\"x\", ylabel=\"T\")",
+    "crumbs": [
+      "Finite Difference Method"
+    ]
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "This lecture introduces master-level engineering students to the simulation of thermofluids and fluid dynamics using Julia.\nThe lecture combines:\n\nphysical modeling,\nnumerical discretization,\nfinite differences,\nfinite elements,\nCFD packages,\nmachine learning,\nphysics-informed neural networks,\nverification and validation.",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#course-description",
+    "href": "overview.html#course-description",
+    "title": "Course Overview",
+    "section": "",
+    "text": "This lecture introduces master-level engineering students to the simulation of thermofluids and fluid dynamics using Julia.\nThe lecture combines:\n\nphysical modeling,\nnumerical discretization,\nfinite differences,\nfinite elements,\nCFD packages,\nmachine learning,\nphysics-informed neural networks,\nverification and validation.",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#structure",
+    "href": "overview.html#structure",
+    "title": "Course Overview",
+    "section": "2 Structure",
+    "text": "2 Structure\n\n\n\n\n\n\n\n\nComponent\nDuration\nContent\n\n\n\n\nIntroduction\n5 h\nJulia, governing equations, discretization, boundary conditions\n\n\nProject 1\n5 h\nCooling of a hot steel cube\n\n\nProject 2\n5 h\nCooling of coffee in a mug\n\n\nProject 3\n5 h\nHeating water in an L-shaped pipe",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#main-themes",
+    "href": "overview.html#main-themes",
+    "title": "Course Overview",
+    "section": "3 Main Themes",
+    "text": "3 Main Themes\n\nTransient heat conduction\nConvective boundary conditions\nInternal and external forced convection\nNatural convection\nFinite difference and finite element methods\nCFD workflows in Julia\nSurrogate modeling and parameter identification\nPhysics-informed neural networks",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#governing-equations",
+    "href": "overview.html#governing-equations",
+    "title": "Course Overview",
+    "section": "4 Governing Equations",
+    "text": "4 Governing Equations\n\n4.1 Heat Conduction\n\\[\n\\rho c_p \\frac{\\partial T}{\\partial t}\n=\n\\nabla\\cdot(k\\nabla T)+\\dot{q}\n\\]\nFor constant \\(k\\):\n\\[\n\\frac{\\partial T}{\\partial t}\n=\n\\alpha\\nabla^2T\n+\n\\frac{\\dot{q}}{\\rho c_p}\n\\]\n\n\n4.2 Incompressible Flow\n\\[\n\\nabla\\cdot \\mathbf{u}=0\n\\]\n\\[\n\\rho\n\\left(\n\\frac{\\partial \\mathbf{u}}{\\partial t}\n+\n\\mathbf{u}\\cdot\\nabla\\mathbf{u}\n\\right)\n=\n-\\nabla p\n+\n\\mu\\nabla^2\\mathbf{u}\n+\n\\rho\\mathbf{g}\n\\]\n\n\n4.3 Energy Equation for Flow\n\\[\n\\rho c_p\n\\left(\n\\frac{\\partial T}{\\partial t}\n+\n\\mathbf{u}\\cdot\\nabla T\n\\right)\n=\n\\nabla\\cdot(k\\nabla T)+\\dot{q}\n\\]",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#dimensionless-numbers",
+    "href": "overview.html#dimensionless-numbers",
+    "title": "Course Overview",
+    "section": "5 Dimensionless Numbers",
+    "text": "5 Dimensionless Numbers\n\n\n\n\n\n\n\n\nNumber\nDefinition\nMeaning\n\n\n\n\nReynolds\n\\(Re=UL/\\nu\\)\ninertia vs. viscosity\n\n\nPrandtl\n\\(Pr=\\nu/\\alpha\\)\nmomentum vs. thermal diffusion\n\n\nNusselt\n\\(Nu=hL/k\\)\nconvective heat transfer\n\n\nBiot\n\\(Bi=hL_c/k_s\\)\ninternal vs. external thermal resistance\n\n\nFourier\n\\(Fo=\\alpha t/L_c^2\\)\ndimensionless time\n\n\nRayleigh\n\\(Ra=g\\beta\\Delta T L^3/(\\nu\\alpha)\\)\nnatural convection strength",
+    "crumbs": [
+      "Home",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "projects/project-3-l-pipe.html",
+    "href": "projects/project-3-l-pipe.html",
+    "title": "Project 3: Heating of Water in an L-Shaped Pipe",
+    "section": "",
+    "text": "Water flows through an L-shaped pipe. The outer wall temperature is maintained at (100^). The water enters colder and is heated along the pipe.",
+    "crumbs": [
+      "Project 3: Heating of Water in an L-Shaped Pipe"
+    ]
+  },
+  {
+    "objectID": "projects/project-3-l-pipe.html#problem-statement",
+    "href": "projects/project-3-l-pipe.html#problem-statement",
+    "title": "Project 3: Heating of Water in an L-Shaped Pipe",
+    "section": "",
+    "text": "Water flows through an L-shaped pipe. The outer wall temperature is maintained at (100^). The water enters colder and is heated along the pipe.",
+    "crumbs": [
+      "Project 3: Heating of Water in an L-Shaped Pipe"
+    ]
+  },
+  {
+    "objectID": "projects/project-3-l-pipe.html#plug-flow-model",
+    "href": "projects/project-3-l-pipe.html#plug-flow-model",
+    "title": "Project 3: Heating of Water in an L-Shaped Pipe",
+    "section": "2 Plug-Flow Model",
+    "text": "2 Plug-Flow Model\n[ c_p = G’(T_w-T_b) ]\nAnalytical solution:\n[ T_b(s)=T_w-(T_w-T_{in}) (-) ]",
+    "crumbs": [
+      "Project 3: Heating of Water in an L-Shaped Pipe"
+    ]
+  },
+  {
+    "objectID": "projects/project-3-l-pipe.html#julia-example",
+    "href": "projects/project-3-l-pipe.html#julia-example",
+    "title": "Project 3: Heating of Water in an L-Shaped Pipe",
+    "section": "3 Julia Example",
+    "text": "3 Julia Example\nusing Plots\n\nTwall = 100.0\nTin = 20.0\nmdot = 0.02\ncp = 4180.0\nGprime = 16.0\nLtot = 1.08\n\ns = range(0, Ltot, length=200)\n\nT = Twall .- (Twall - Tin).*exp.(-Gprime .* s ./ (mdot*cp))\n\nplot(s, T,\n     xlabel=\"Distance along pipe [m]\",\n     ylabel=\"Bulk temperature [°C]\",\n     label=\"Water temperature\",\n     linewidth=2)",
+    "crumbs": [
+      "Project 3: Heating of Water in an L-Shaped Pipe"
+    ]
+  },
+  {
+    "objectID": "projects/project-3-l-pipe.html#student-tasks",
+    "href": "projects/project-3-l-pipe.html#student-tasks",
+    "title": "Project 3: Heating of Water in an L-Shaped Pipe",
+    "section": "4 Student Tasks",
+    "text": "4 Student Tasks\n\nCompute (Re), (Nu), and (h_i).\nCompute (G’).\nPredict outlet temperature.\nCompare numerical and analytical solutions.\nBuild an ML surrogate for (T_{out}).\nOptional: implement a PINN for (T(s)).",
+    "crumbs": [
+      "Project 3: Heating of Water in an L-Shaped Pipe"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html",
+    "href": "projects/project-2-coffee.html",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "",
+    "text": "A mug filled with hot coffee cools in a room. The goal is to predict the coffee temperature as a function of time and estimate the influence of mug properties, convection, radiation, and evaporation.",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#problem-statement",
+    "href": "projects/project-2-coffee.html#problem-statement",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "",
+    "text": "A mug filled with hot coffee cools in a room. The goal is to predict the coffee temperature as a function of time and estimate the influence of mug properties, convection, radiation, and evaporation.",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#suggested-parameters",
+    "href": "projects/project-2-coffee.html#suggested-parameters",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "2 Suggested Parameters",
+    "text": "2 Suggested Parameters\n\n\n\nQuantity\nSymbol\nValue\n\n\n\n\nCoffee mass\n(m_c)\n(0.25 )\n\n\nCoffee heat capacity\n(c_{p,c})\n(4180 )\n\n\nInitial coffee temperature\n(T_0)\n(90^)\n\n\nRoom temperature\n(T_)\n(22^)\n\n\nMug inner radius\n(r_i)\n(0.04 )\n\n\nCoffee height\n(H)\n(0.08 )",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#basic-model",
+    "href": "projects/project-2-coffee.html#basic-model",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "3 Basic Model",
+    "text": "3 Basic Model\n[ m c_p = -hA(T-T_) ]\nwith solution:\n[ T(t)=T_+(T_0-T_) (-t) ]",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#julia-example",
+    "href": "projects/project-2-coffee.html#julia-example",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "4 Julia Example",
+    "text": "4 Julia Example\nusing DifferentialEquations\nusing Plots\n\nfunction cooling!(du,u,p,t)\n    T = u[1]\n    Tinf, hA, mcp = p\n    du[1] = -hA/mcp*(T-Tinf)\nend\n\nu0 = [90.0]\np = (22.0, 0.25, 0.25*4180.0)\nprob = ODEProblem(cooling!, u0, (0.0, 3600.0), p)\nsol = solve(prob)\n\nplot(sol.t ./ 60, sol[1,:],\n     xlabel=\"Time [min]\",\n     ylabel=\"Temperature [°C]\",\n     label=\"Coffee\")",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#mlpinn-extension",
+    "href": "projects/project-2-coffee.html#mlpinn-extension",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "5 ML/PINN Extension",
+    "text": "5 ML/PINN Extension\nEstimate unknown cooling parameters from measured data:\n[ __i ^2 ]\nPossible unknowns:\n\n(h)\n(UA)\nevaporation coefficient\nemissivity\nmug heat capacity",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-2-coffee.html#student-tasks",
+    "href": "projects/project-2-coffee.html#student-tasks",
+    "title": "Project 2: Cooling of Coffee in a Mug",
+    "section": "6 Student Tasks",
+    "text": "6 Student Tasks\n\nImplement one-node and two-node models.\nAdd radiation.\nAdd evaporation.\nFit parameters from data.\nCompare simulation with experiment.",
+    "crumbs": [
+      "Project 2: Cooling of Coffee in a Mug"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html",
+    "href": "projects/project-1-steel-cube.html",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "",
+    "text": "A steel cube of side length\n[ L = 70  ]\nis initially at\n[ T_0 = 1000^ ]\nand is cooled by air and an ice-water mixture. The lower 40 mm are submerged in an ice-water mixture at (0^). The surrounding air is at (20^). A constant heat flux of (200 ^2) is applied at the bottom. The process lasts 6 minutes.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#problem-statement",
+    "href": "projects/project-1-steel-cube.html#problem-statement",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "",
+    "text": "A steel cube of side length\n[ L = 70  ]\nis initially at\n[ T_0 = 1000^ ]\nand is cooled by air and an ice-water mixture. The lower 40 mm are submerged in an ice-water mixture at (0^). The surrounding air is at (20^). A constant heat flux of (200 ^2) is applied at the bottom. The process lasts 6 minutes.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#geometry-and-boundary-conditions",
+    "href": "projects/project-1-steel-cube.html#geometry-and-boundary-conditions",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "2 Geometry and Boundary Conditions",
+    "text": "2 Geometry and Boundary Conditions\n\n\n\nQuantity\nSymbol\nValue\n\n\n\n\nCube side length\n(L)\n(0.07 )\n\n\nWater level\n(h_w)\n(0.04 )\n\n\nInitial temperature\n(T_0)\n(1000^)\n\n\nAir temperature\n(T_{,a})\n(20^)\n\n\nWater temperature\n(T_{,w})\n(0^)\n\n\nBottom heat flux\n(q’’)\n(200 ^2)\n\n\nSimulation time\n(t_{end})\n(360 )",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#assumptions",
+    "href": "projects/project-1-steel-cube.html#assumptions",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "3 Assumptions",
+    "text": "3 Assumptions\n\nConstant steel properties.\nHeat transfer in the steel is by conduction.\nExternal heat transfer is represented by constant heat-transfer coefficients.\nRadiation is neglected in the base model.\nThe ice-water mixture remains at (0^).\nNo phase transformation of steel is considered.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#governing-equation",
+    "href": "projects/project-1-steel-cube.html#governing-equation",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "4 Governing Equation",
+    "text": "4 Governing Equation\n[ c_p = k^2T ]\nor\n[ = ^2T ]\nwith\n[ =. ]",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#material-properties",
+    "href": "projects/project-1-steel-cube.html#material-properties",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "5 Material Properties",
+    "text": "5 Material Properties\n\n\n\nProperty\nSymbol\nValue\n\n\n\n\nDensity\n()\n(7850 ^3)\n\n\nHeat capacity\n(c_p)\n(600 )\n\n\nThermal conductivity\n(k)\n(35 )",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#julia-starter-code",
+    "href": "projects/project-1-steel-cube.html#julia-starter-code",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "6 Julia Starter Code",
+    "text": "6 Julia Starter Code\nusing Plots\n\nL = 0.07\nT0 = 1000.0\nTair = 20.0\nTwater = 0.0\n\nρ = 7850.0\ncp = 600.0\nk = 35.0\nα = k/(ρ*cp)\n\nprintln(\"Thermal diffusivity = \", α)",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#student-tasks",
+    "href": "projects/project-1-steel-cube.html#student-tasks",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "7 Student Tasks",
+    "text": "7 Student Tasks\n\nImplement a 1D or 2D transient heat-transfer model.\nPlot temperature fields after 1, 3, and 6 minutes.\nPlot center, top, and bottom temperatures versus time.\nCompute the average cube temperature.\nCompare with a lumped-capacitance model.\nPerform a sensitivity study for (h_{water}).\nDiscuss whether radiation should be included.\nOptional: build an ML surrogate or PINN model.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#verification",
+    "href": "projects/project-1-steel-cube.html#verification",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "8 Verification",
+    "text": "8 Verification\nRecommended checks:\n\nEnergy balance.\nGrid refinement.\nTime-step refinement.\nComparison with lumped model for small Biot number.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "projects/project-1-steel-cube.html#deliverables",
+    "href": "projects/project-1-steel-cube.html#deliverables",
+    "title": "Project 1: Cooling of a Hot Steel Cube",
+    "section": "9 Deliverables",
+    "text": "9 Deliverables\n\nJulia code or notebook.\nTemperature plots.\nParameter study.\nShort technical report.",
+    "crumbs": [
+      "Project 1: Cooling of a Hot Steel Cube"
+    ]
+  },
+  {
+    "objectID": "references.html#online-resources",
+    "href": "references.html#online-resources",
+    "title": "References",
+    "section": "2 Online Resources",
+    "text": "2 Online Resources\n\nJulia Documentation\nDifferentialEquations.jl Documentation\nGridap.jl Documentation\nQuarto Documentation\nJulia Academy",
+    "crumbs": [
+      "Home",
+      "References"
+    ]
+  },
+  {
+    "objectID": "methods/cfd-libraries.html",
+    "href": "methods/cfd-libraries.html",
+    "title": "CFD Libraries in Julia",
+    "section": "",
+    "text": "Julia contains several packages that are helpful for thermofluid simulation.\n\n\n\n\n\n\n\n\nPackage\nMain Role\nCourse Use\n\n\n\n\nDifferentialEquations.jl\nODEs and time integration\nCoffee, pipe, semi-discrete PDEs\n\n\nGridap.jl\nFinite element method\nHeat conduction and advection-diffusion\n\n\nWaterLily.jl\nIncompressible immersed-boundary CFD\nFlow visualization around bodies\n\n\nOceananigans.jl\nIncompressible/buoyant flow\nNatural convection extension\n\n\nTrixi.jl\nHigh-order conservation laws\nCompressible CFD extension\n\n\nVoronoiFVM.jl\nFinite volume on unstructured grids\nTransport and heat transfer\n\n\nMethodOfLines.jl\nPDE-to-ODE discretization\nHeat and advection-diffusion equations",
+    "crumbs": [
+      "CFD Libraries in Julia"
+    ]
+  },
+  {
+    "objectID": "methods/cfd-libraries.html#overview",
+    "href": "methods/cfd-libraries.html#overview",
+    "title": "CFD Libraries in Julia",
+    "section": "",
+    "text": "Julia contains several packages that are helpful for thermofluid simulation.\n\n\n\n\n\n\n\n\nPackage\nMain Role\nCourse Use\n\n\n\n\nDifferentialEquations.jl\nODEs and time integration\nCoffee, pipe, semi-discrete PDEs\n\n\nGridap.jl\nFinite element method\nHeat conduction and advection-diffusion\n\n\nWaterLily.jl\nIncompressible immersed-boundary CFD\nFlow visualization around bodies\n\n\nOceananigans.jl\nIncompressible/buoyant flow\nNatural convection extension\n\n\nTrixi.jl\nHigh-order conservation laws\nCompressible CFD extension\n\n\nVoronoiFVM.jl\nFinite volume on unstructured grids\nTransport and heat transfer\n\n\nMethodOfLines.jl\nPDE-to-ODE discretization\nHeat and advection-diffusion equations",
+    "crumbs": [
+      "CFD Libraries in Julia"
+    ]
+  },
+  {
+    "objectID": "methods/cfd-libraries.html#recommended-use-in-this-course",
+    "href": "methods/cfd-libraries.html#recommended-use-in-this-course",
+    "title": "CFD Libraries in Julia",
+    "section": "2 Recommended Use in This Course",
+    "text": "2 Recommended Use in This Course\nFor the five projects, the most useful core packages are:\nDifferentialEquations.jl\nGridap.jl\nLux.jl\nNeuralPDE.jl\nWaterLily.jl is recommended as a visual CFD demonstration for flow around objects and the interpretation of convective heat-transfer coefficients.",
+    "crumbs": [
+      "CFD Libraries in Julia"
+    ]
+  },
+  {
+    "objectID": "methods/cfd-libraries.html#pedagogical-rule",
+    "href": "methods/cfd-libraries.html#pedagogical-rule",
+    "title": "CFD Libraries in Julia",
+    "section": "3 Pedagogical Rule",
+    "text": "3 Pedagogical Rule\nDo not treat libraries as black boxes.\nFor every package-based simulation, students should identify:\n\ngoverning equations,\nassumptions,\nboundary conditions,\nnumerical method,\nverification strategy.",
+    "crumbs": [
+      "CFD Libraries in Julia"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html",
+    "href": "methods/ml-pinns.html",
+    "title": "Machine Learning and PINNs",
+    "section": "",
+    "text": "Machine learning can be used for:\n\nsurrogate modeling,\nparameter identification,\nreduced-order modeling,\nclosure modeling,\ninverse heat-transfer problems.",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html#ml-roles-in-thermofluids",
+    "href": "methods/ml-pinns.html#ml-roles-in-thermofluids",
+    "title": "Machine Learning and PINNs",
+    "section": "",
+    "text": "Machine learning can be used for:\n\nsurrogate modeling,\nparameter identification,\nreduced-order modeling,\nclosure modeling,\ninverse heat-transfer problems.",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html#pinn-concept",
+    "href": "methods/ml-pinns.html#pinn-concept",
+    "title": "Machine Learning and PINNs",
+    "section": "2 PINN Concept",
+    "text": "2 PINN Concept\nA physics-informed neural network approximates the solution:\n[ T(x,t)T_(x,t) ]\nThe loss includes the PDE residual:\n[ _{PDE} = _i ^2 ]\nplus initial and boundary condition losses.",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html#example-coffee-ode-pinn",
+    "href": "methods/ml-pinns.html#example-coffee-ode-pinn",
+    "title": "Machine Learning and PINNs",
+    "section": "3 Example: Coffee ODE PINN",
+    "text": "3 Example: Coffee ODE PINN\nNewton cooling:\n[ + (T-T_)=0 ]\nResidual:\n[ r(t)= + (T_-T_) ]",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html#project-mapping",
+    "href": "methods/ml-pinns.html#project-mapping",
+    "title": "Machine Learning and PINNs",
+    "section": "4 Project Mapping",
+    "text": "4 Project Mapping\n\n\n\nProject\nML Task\nPINN Task\n\n\n\n\nSteel cube\nsurrogate for final temperature\n1D heat equation PINN\n\n\nCoffee\nfit cooling parameters\nODE-PINN\n\n\nL-pipe\nsurrogate for outlet temperature\nplug-flow ODE-PINN\n\n\nCavity\n(Nu(Ra)) model\nadvection-diffusion PINN\n\n\nFlat plate\nlearn Nusselt correlation\nboundary-layer PINN",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "methods/ml-pinns.html#practical-advice",
+    "href": "methods/ml-pinns.html#practical-advice",
+    "title": "Machine Learning and PINNs",
+    "section": "5 Practical Advice",
+    "text": "5 Practical Advice\n\nNon-dimensionalize variables.\nStart with simple ODEs.\nCompare with analytical or classical numerical solutions.\nAvoid using PINNs as a black box.\nBe careful with loss weighting.",
+    "crumbs": [
+      "Machine Learning and PINNs"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Block\nDuration\nTopic\n\n\n\n\n1\n5 h\nIntroduction to Julia and thermofluid simulation\n\n\n2\n5 h\nProject 1: Cooling of a hot steel cube\n\n\n3\n5 h\nProject 2: Cooling of coffee in a mug\n\n\n4\n5 h\nProject 3: Heating of water in an L-shaped pipe",
+    "crumbs": [
+      "Home",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#hour-course-schedule",
+    "href": "schedule.html#hour-course-schedule",
+    "title": "Schedule",
+    "section": "",
+    "text": "Block\nDuration\nTopic\n\n\n\n\n1\n5 h\nIntroduction to Julia and thermofluid simulation\n\n\n2\n5 h\nProject 1: Cooling of a hot steel cube\n\n\n3\n5 h\nProject 2: Cooling of coffee in a mug\n\n\n4\n5 h\nProject 3: Heating of water in an L-shaped pipe",
+    "crumbs": [
+      "Home",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#introductory-block",
+    "href": "schedule.html#introductory-block",
+    "title": "Schedule",
+    "section": "2 Introductory Block",
+    "text": "2 Introductory Block\n\n\n\nTime\nActivity\n\n\n\n\n0:00–0:45\nJulia basics\n\n\n0:45–1:30\nGoverning equations\n\n\n1:30–2:15\nHeat equation and finite differences\n\n\n2:15–3:00\nBoundary conditions\n\n\n3:00–3:45\nODE models and DifferentialEquations.jl\n\n\n3:45–4:30\nPlotting and post-processing\n\n\n4:30–5:00\nAssignment of projects and group setup",
+    "crumbs": [
+      "Home",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#generic-project-block",
+    "href": "schedule.html#generic-project-block",
+    "title": "Schedule",
+    "section": "3 Generic Project Block",
+    "text": "3 Generic Project Block\n\n\n\nTime\nActivity\n\n\n\n\n0:00–0:45\nProblem formulation and assumptions\n\n\n0:45–1:30\nGoverning equations and nondimensional numbers\n\n\n1:30–2:30\nNumerical or ML/PINN implementation\n\n\n2:30–3:30\nResults, plotting, debugging\n\n\n3:30–4:30\nParameter study and verification\n\n\n4:30–5:00\nDiscussion and reporting",
+    "crumbs": [
+      "Home",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Software Setup",
+    "section": "",
+    "text": "Install Julia from:\nhttps://julialang.org/downloads/\nRecommended version:\njulia --version\nUse Julia 1.10 or newer if possible.",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#julia-installation",
+    "href": "setup.html#julia-installation",
+    "title": "Software Setup",
+    "section": "",
+    "text": "Install Julia from:\nhttps://julialang.org/downloads/\nRecommended version:\njulia --version\nUse Julia 1.10 or newer if possible.",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#development-environment",
+    "href": "setup.html#development-environment",
+    "title": "Software Setup",
+    "section": "2 Development Environment",
+    "text": "2 Development Environment\nRecommended options:\n\nVS Code with the Julia extension\nPluto notebooks\nJupyter notebooks via IJulia\nJulia REPL",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#basic-package-installation",
+    "href": "setup.html#basic-package-installation",
+    "title": "Software Setup",
+    "section": "3 Basic Package Installation",
+    "text": "3 Basic Package Installation\nusing Pkg\n\nPkg.add([\n    \"Plots\",\n    \"CairoMakie\",\n    \"LinearAlgebra\",\n    \"SparseArrays\",\n    \"Statistics\",\n    \"DifferentialEquations\",\n    \"OrdinaryDiffEq\",\n    \"DataFrames\",\n    \"CSV\"\n])",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#fem-packages",
+    "href": "setup.html#fem-packages",
+    "title": "Software Setup",
+    "section": "4 FEM Packages",
+    "text": "4 FEM Packages\nusing Pkg\n\nPkg.add([\n    \"Gridap\",\n    \"GridapGmsh\",\n    \"Gmsh\"\n])",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#ml-and-pinn-packages",
+    "href": "setup.html#ml-and-pinn-packages",
+    "title": "Software Setup",
+    "section": "5 ML and PINN Packages",
+    "text": "5 ML and PINN Packages\nusing Pkg\n\nPkg.add([\n    \"Lux\",\n    \"Flux\",\n    \"Optimization\",\n    \"OptimizationOptimisers\",\n    \"OptimizationOptimJL\",\n    \"ComponentArrays\",\n    \"Zygote\",\n    \"SciMLSensitivity\",\n    \"NeuralPDE\",\n    \"ModelingToolkit\"\n])",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#optional-cfd-packages",
+    "href": "setup.html#optional-cfd-packages",
+    "title": "Software Setup",
+    "section": "6 Optional CFD Packages",
+    "text": "6 Optional CFD Packages\nusing Pkg\n\nPkg.add([\n    \"WaterLily\",\n    \"Oceananigans\",\n    \"Trixi\",\n    \"VoronoiFVM\",\n    \"MethodOfLines\"\n])",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#test-installation",
+    "href": "setup.html#test-installation",
+    "title": "Software Setup",
+    "section": "7 Test Installation",
+    "text": "7 Test Installation\nusing DifferentialEquations\nusing Plots\n\nf(u,p,t) = -0.01u\nprob = ODEProblem(f, 1.0, (0.0, 10.0))\nsol = solve(prob)\n\nplot(sol)\nIf a plot appears, the basic installation works.",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#quarto-with-julia",
+    "href": "setup.html#quarto-with-julia",
+    "title": "Software Setup",
+    "section": "8 Quarto with Julia",
+    "text": "8 Quarto with Julia\nInstall Quarto:\nhttps://quarto.org/docs/get-started/\nTo render this website:\nquarto render\nTo preview locally:\nquarto preview",
+    "crumbs": [
+      "Home",
+      "Software Setup"
+    ]
+  }
+]

@@ -1,0 +1,633 @@
+/* -------------------------------------------------------
+  Thermofluid Simulation with Julia
+  Quarto course website style
+
+  Palette restricted to the following RGB colors only:
+
+  rgb(178,143,107)  #B28F6B
+  rgb(215,157,49)   #D79D31
+  rgb(135,109,88)   #876D58
+  rgb(238,110,139)  #EE6E8B
+  rgb(154,155,134)  #9A9B86
+  rgb(255,162,102)  #FFA266
+  rgb(240,239,235)  #F0EFEB
+  rgb(195,124,84)   #C37C54
+
+------------------------------------------------------- */
+
+:root {
+  --tf-taupe: rgb(178,143,107);
+  --tf-ochre: rgb(215,157,49);
+  --tf-brown: rgb(135,109,88);
+  --tf-pink: rgb(238,110,139);
+  --tf-sage: rgb(154,155,134);
+  --tf-orange: rgb(255,162,102);
+  --tf-cream: rgb(240,239,235);
+  --tf-clay: rgb(195,124,84);
+
+  --tf-background: rgb(240,239,235);
+  --tf-surface: rgb(240,239,235);
+  --tf-text: rgb(135,109,88);
+  --tf-heading: rgb(135,109,88);
+  --tf-border: rgb(178,143,107);
+  --tf-accent: rgb(215,157,49);
+  --tf-accent-2: rgb(195,124,84);
+  --tf-accent-3: rgb(238,110,139);
+}
+
+/* -------------------------------------------------------
+  General page
+------------------------------------------------------- */
+
+body {
+  background-color: var(--tf-background);
+  color: var(--tf-text);
+}
+
+/* -------------------------------------------------------
+  Navbar
+------------------------------------------------------- */
+
+.navbar {
+  background-color: var(--tf-cream) !important;
+  color: var(--tf-brown) !important;
+  border-bottom: 2px solid var(--tf-taupe);
+  box-shadow: none;
+}
+
+.navbar a,
+.navbar-brand,
+.navbar-title,
+.navbar-nav .nav-link {
+  color: var(--tf-brown) !important;
+}
+
+.navbar a:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--tf-clay) !important;
+}
+
+/* Navbar logo with 3:1 aspect ratio */
+.navbar-brand img {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Improve logo visibility on narrow screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 38px;
+  }
+}
+
+/* Search button/icon areas */
+.aa-DetachedSearchButton,
+.aa-DetachedSearchButtonIcon,
+.aa-DetachedSearchButtonPlaceholder {
+  background-color: var(--tf-cream) !important;
+  color: var(--tf-brown) !important;
+  border-color: var(--tf-taupe) !important;
+}
+
+/* -------------------------------------------------------
+   Sidebar
+------------------------------------------------------- */
+
+.sidebar {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border-right: 1px solid var(--tf-taupe);
+}
+
+.sidebar a {
+  color: var(--tf-brown);
+}
+
+.sidebar a:hover {
+  color: var(--tf-clay);
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
+  color: var(--tf-clay) !important;
+  border-left-color: var(--tf-clay) !important;
+}
+
+/* -------------------------------------------------------
+  Headings and text
+------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--tf-heading);
+  font-weight: 650;
+}
+
+h1 {
+  border-bottom: 3px solid var(--tf-orange);
+  padding-bottom: 0.35rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--tf-taupe);
+  padding-bottom: 0.15rem;
+}
+
+p,
+li,
+td,
+th {
+  color: var(--tf-text);
+}
+
+strong {
+  color: var(--tf-brown);
+}
+
+em {
+  color: var(--tf-clay);
+}
+
+/* -------------------------------------------------------
+  Links
+------------------------------------------------------- */
+
+a {
+  color: var(--tf-clay);
+}
+
+a:hover {
+  color: var(--tf-pink);
+}
+
+/* -------------------------------------------------------
+  Hero banner
+------------------------------------------------------- */
+
+.hero {
+  background-color: var(--tf-cream);
+  border: 2px solid var(--tf-taupe);
+  border-radius: 18px;
+  padding: 2.2rem;
+  margin-bottom: 2rem;
+  box-shadow: none;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border: 2px solid var(--tf-taupe);
+  box-shadow: none;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  margin-bottom: 0.6rem;
+  color: var(--tf-brown);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--tf-brown);
+  max-width: 850px;
+}
+
+/* -------------------------------------------------------
+  Cards
+------------------------------------------------------- */
+
+.course-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.course-card {
+  background-color: var(--tf-cream);
+  border: 2px solid var(--tf-taupe);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: none;
+  transition: transform 0.12s ease-in-out, border-color 0.12s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--tf-clay);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: var(--tf-brown);
+}
+
+.course-card p {
+  color: var(--tf-brown);
+}
+
+.course-card a {
+  color: var(--tf-clay);
+}
+
+.course-card a:hover {
+  color: var(--tf-pink);
+}
+
+/* -------------------------------------------------------
+  Tags
+------------------------------------------------------- */
+
+.course-card .tag,
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  background-color: var(--tf-taupe);
+  color: var(--tf-cream);
+  border: 1px solid var(--tf-brown);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Method tags */
+.tag-fdm {
+  background-color: var(--tf-sage) !important;
+  color: var(--tf-cream) !important;
+  border-color: var(--tf-brown) !important;
+}
+
+.tag-fem {
+  background-color: var(--tf-pink) !important;
+  color: var(--tf-cream) !important;
+  border-color: var(--tf-brown) !important;
+}
+
+.tag-cfd {
+  background-color: var(--tf-ochre) !important;
+  color: var(--tf-brown) !important;
+  border-color: var(--tf-brown) !important;
+}
+
+.tag-ml {
+  background-color: var(--tf-orange) !important;
+  color: var(--tf-brown) !important;
+  border-color: var(--tf-brown) !important;
+}
+
+.tag-heat {
+  background-color: var(--tf-clay) !important;
+  color: var(--tf-cream) !important;
+  border-color: var(--tf-brown) !important;
+}
+
+/* -------------------------------------------------------
+  Tables
+------------------------------------------------------- */
+
+table {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border-color: var(--tf-taupe);
+}
+
+thead {
+  background-color: var(--tf-taupe);
+  color: var(--tf-cream);
+}
+
+thead th {
+  color: var(--tf-cream);
+  border-color: var(--tf-brown);
+}
+
+tbody tr {
+  border-color: var(--tf-taupe);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--tf-cream);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--tf-cream);
+}
+
+td,
+th {
+  border-color: var(--tf-taupe);
+}
+
+/* -------------------------------------------------------
+  Code blocks
+------------------------------------------------------- */
+
+pre,
+pre.sourceCode {
+  background-color: var(--tf-cream) !important;
+  color: var(--tf-brown) !important;
+  border-radius: 12px;
+  border: 2px solid var(--tf-taupe);
+}
+
+code {
+  color: var(--tf-clay);
+  background-color: var(--tf-cream);
+}
+
+.cell-output,
+.cell-output-display,
+.cell-output-stdout,
+.cell-output-stderr {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border-color: var(--tf-taupe);
+}
+
+/* Code copy button */
+.code-copy-button {
+  color: var(--tf-brown) !important;
+  background-color: var(--tf-cream) !important;
+  border-color: var(--tf-taupe) !important;
+}
+
+.code-copy-button:hover {
+  color: var(--tf-clay) !important;
+  background-color: var(--tf-cream) !important;
+}
+
+/* -------------------------------------------------------
+  Callouts
+------------------------------------------------------- */
+
+.callout {
+  border-radius: 14px;
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border-color: var(--tf-taupe);
+}
+
+.callout-title {
+  color: var(--tf-brown);
+}
+
+.callout-note {
+  border-left-color: var(--tf-sage);
+}
+
+.callout-tip {
+  border-left-color: var(--tf-ochre);
+}
+
+.callout-warning {
+  border-left-color: var(--tf-orange);
+}
+
+.callout-important {
+  border-left-color: var(--tf-pink);
+}
+
+.callout-caution {
+  border-left-color: var(--tf-clay);
+}
+
+/* -------------------------------------------------------
+  Footer
+------------------------------------------------------- */
+
+.footer {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border-top: 2px solid var(--tf-taupe);
+}
+
+.footer a {
+  color: var(--tf-clay);
+}
+
+.footer a:hover {
+  color: var(--tf-pink);
+}
+
+/* -------------------------------------------------------
+  Figures and captions
+------------------------------------------------------- */
+
+.figure-caption,
+figcaption {
+  color: var(--tf-brown);
+  font-size: 0.92rem;
+}
+
+img {
+  border-color: var(--tf-taupe);
+}
+
+/* -------------------------------------------------------
+  Buttons
+------------------------------------------------------- */
+
+.btn,
+.btn-primary {
+  background-color: var(--tf-clay);
+  border-color: var(--tf-brown);
+  color: var(--tf-cream);
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--tf-pink);
+  border-color: var(--tf-brown);
+  color: var(--tf-cream);
+}
+
+.btn-secondary {
+  background-color: var(--tf-taupe);
+  border-color: var(--tf-brown);
+  color: var(--tf-cream);
+}
+
+.btn-secondary:hover {
+  background-color: var(--tf-ochre);
+  border-color: var(--tf-brown);
+  color: var(--tf-brown);
+}
+
+/* -------------------------------------------------------
+  Forms and inputs
+------------------------------------------------------- */
+
+input,
+textarea,
+select {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+  border: 1px solid var(--tf-taupe);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--tf-clay);
+  outline-color: var(--tf-clay);
+}
+
+/* -------------------------------------------------------
+  Search overlay and autocomplete
+------------------------------------------------------- */
+
+.aa-Panel,
+.aa-DetachedContainer,
+.aa-Form,
+.aa-Input,
+.aa-Item {
+  background-color: var(--tf-cream) !important;
+  color: var(--tf-brown) !important;
+  border-color: var(--tf-taupe) !important;
+}
+
+.aa-Item[aria-selected="true"] {
+  background-color: var(--tf-taupe) !important;
+  color: var(--tf-cream) !important;
+}
+
+/* -------------------------------------------------------
+  Table of contents
+------------------------------------------------------- */
+
+#TOC,
+.toc-active {
+  color: var(--tf-brown);
+}
+
+#TOC a {
+  color: var(--tf-brown);
+}
+
+#TOC a:hover {
+  color: var(--tf-clay);
+}
+
+#TOC .active {
+  color: var(--tf-pink);
+  border-left-color: var(--tf-pink);
+}
+
+/* -------------------------------------------------------
+  Tabs, panels, and nav pills
+------------------------------------------------------- */
+
+.nav-tabs {
+  border-bottom-color: var(--tf-taupe);
+}
+
+.nav-tabs .nav-link {
+  color: var(--tf-brown);
+  border-color: var(--tf-taupe);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--tf-cream);
+  background-color: var(--tf-clay);
+  border-color: var(--tf-brown);
+}
+
+.panel-tabset .nav-tabs .nav-link:hover {
+  color: var(--tf-pink);
+}
+
+/* -------------------------------------------------------
+  Blockquotes
+------------------------------------------------------- */
+
+blockquote {
+  border-left: 4px solid var(--tf-clay);
+  color: var(--tf-brown);
+  background-color: var(--tf-cream);
+}
+
+/* -------------------------------------------------------
+  Horizontal rule
+------------------------------------------------------- */
+
+hr {
+  border-color: var(--tf-taupe);
+}
+
+/* -------------------------------------------------------
+  Utility classes
+------------------------------------------------------- */
+
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: var(--tf-sage);
+}
+
+.compact-list li {
+  margin-bottom: 0.25rem;
+}
+
+/* Optional page banner */
+.course-page-banner {
+  background-color: var(--tf-cream);
+  text-align: center;
+  padding: 1rem 1rem 0.4rem 1rem;
+  border-bottom: 1px solid var(--tf-taupe);
+}
+
+.course-page-banner img {
+  max-width: 920px;
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid var(--tf-taupe);
+}
+
+/* -------------------------------------------------------
+  Mermaid diagrams, if used
+------------------------------------------------------- */
+
+.mermaid {
+  background-color: var(--tf-cream);
+  color: var(--tf-brown);
+}
+
+/* -------------------------------------------------------
+  MathJax / equations
+------------------------------------------------------- */
+
+mjx-container {
+  color: var(--tf-brown);
+}
+
+/* -------------------------------------------------------
+  Print behavior
+------------------------------------------------------- */
+
+@media print {
+  body {
+    background-color: var(--tf-cream);
+    color: var(--tf-brown);
+  }
+
+  a {
+    color: var(--tf-brown);
+  }
+
+  .navbar,
+  .sidebar,
+  .footer {
+    background-color: var(--tf-cream);
+    color: var(--tf-brown);
+  }
+}
